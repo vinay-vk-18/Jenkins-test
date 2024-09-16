@@ -1,2 +1,9 @@
-echo "hello team. Good morning!"
-echo "Hi  vinay"
+pipeline {
+  agent any 
+    stages{
+      stage('build') {
+        step {
+          echo "Hello world..!"
+        }
+      }
+    }
